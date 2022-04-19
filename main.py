@@ -12,7 +12,7 @@ def settimeout(duration):
 
 wlan = WLAN(mode=WLAN.STA)
 #wlan.antenna(WLAN.EXT_ANT)
-wlan.connect("BELL094", auth=(WLAN.WPA2, "14FADA65171E"), timeout=30000)
+wlan.connect("YOURSSID", auth=(WLAN.WPA2, "YOURPASSWORD"), timeout=30000)
 
 while not wlan.isconnected(): 
      machine.idle()
